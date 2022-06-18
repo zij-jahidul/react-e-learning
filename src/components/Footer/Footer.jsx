@@ -6,6 +6,7 @@ import { faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 class Footer extends Component {
   render() {
@@ -17,15 +18,15 @@ class Footer extends Component {
               <h2 className="footerName text-center">Follow Us </h2>
 
               <div className="social-container">
-                <a className="facebook social" href="#">
+                <Link className="facebook social" to="/">
                   <FontAwesomeIcon icon={faFacebook} size="2x" />
-                </a>
-                <a href="#" className="youtube social">
+                </Link>
+                <Link to="/" className="youtube social">
                   <FontAwesomeIcon icon={faYoutube} size="2x" />
-                </a>
-                <a href="#" className="twitter social">
+                </Link>
+                <Link to="/" className="twitter social">
                   <FontAwesomeIcon icon={faTwitter} size="2x" />
-                </a>
+                </Link>
               </div>
             </Col>
 
@@ -42,42 +43,42 @@ class Footer extends Component {
 
             <Col lg="3" md={6} sm={12} className="p-5 text-justify">
               <h2 className="footerName">Information </h2>
-              <a className="footerLink" href="#">
+              <Link className="footerLink" to="/">
                 About Me
-              </a>
+              </Link>
               <br></br>
-              <a className="footerLink" href="#">
+              <Link className="footerLink" to="/">
                 Company Profile
-              </a>
+              </Link>
               <br></br>
-              <a className="footerLink" href="#">
+              <Link className="footerLink" to="/">
                 Contact Us
-              </a>
+              </Link>
               <br></br>
             </Col>
 
             <Col lg="3" md={6} sm={12} className="p-5 text-justify">
               <h2 className="footerName">Policy </h2>
-              <a className="footerLink" href="#">
+              <Link className="footerLink" to="/">
                 Refund Policy
-              </a>
+              </Link>
               <br></br>
-              <a className="footerLink" href="#">
+              <Link className="footerLink" to="/">
                 Terms And Condition
-              </a>
+              </Link>
               <br></br>
-              <a className="footerLink" href="#">
+              <Link className="footerLink" to="/">
                 Privacy Policy
-              </a>
+              </Link>
               <br></br>
             </Col>
           </Row>
         </Container>
 
         <Container fluid={true} className="text-center copyrightSection">
-          <a className="copyRightLink" href="#">
+          <Link className="copyRightLink" to="/">
             © Copyright 2022 by Zij, All Rights Reserved
-          </a>
+          </Link>
         </Container>
       </Fragment>
     );

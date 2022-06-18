@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from "react";
+import { Link } from "react-router-dom";
 import { Navbar, Nav } from "react-bootstrap";
 import "../../asset/css/custom.css";
 import "../../asset/css/bootstrap.min.css";
@@ -51,30 +52,47 @@ class TopNavigation extends Component {
           expand="lg"
           variant={this.state.navVariant}
         >
-          <Navbar.Brand className={this.state.navBarTitle} href="#home">
+          <Navbar.Brand className={this.state.navBarTitle} to="/">
             <img src={this.state.navBarLogo} alt="logo" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto"></Nav>
             <Nav>
-              <Nav.Link className={this.state.navBarItem} href="#">
-                HOME
+              <Nav.Link>
+                <Link className={this.state.navBarItem} to="/">
+                  HOME
+                </Link>
               </Nav.Link>
-              <Nav.Link className={this.state.navBarItem} href="#">
-                ABOUT
+
+              <Nav.Link>
+                <Link className={this.state.navBarItem} to="/about">
+                  ABOUT
+                </Link>
               </Nav.Link>
-              <Nav.Link className={this.state.navBarItem} href="#">
-                SERVICE
+
+              <Nav.Link>
+                <Link className={this.state.navBarItem} to="/service">
+                  SERVICE
+                </Link>
               </Nav.Link>
-              <Nav.Link className={this.state.navBarItem} href="#">
-                COURSES
+
+              <Nav.Link>
+                <Link className={this.state.navBarItem} to="/course">
+                  COURSES
+                </Link>
               </Nav.Link>
-              <Nav.Link className={this.state.navBarItem} href="#">
-                PORTFOLIO
+
+              <Nav.Link>
+                <Link className={this.state.navBarItem} to="/portfolio">
+                  PORTFOLIO
+                </Link>
               </Nav.Link>
-              <Nav.Link className={this.state.navBarItem} href="#">
-                CONTACT US
+
+              <Nav.Link>
+                <Link className={this.state.navBarItem} to="/contact">
+                  CONTACT US
+                </Link>
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>

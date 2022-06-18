@@ -2,7 +2,7 @@ import React, { Component, Fragment } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-class Courses extends Component {
+class AllCourses extends Component {
   render() {
     return (
       <Fragment>
@@ -17,6 +17,25 @@ class Courses extends Component {
                     alt="courseImg"
                     className="courseImg"
                     src="https://image.freepik.com/free-photo/learner-lesson_1098-14155.jpg"
+                  />
+                </Col>
+
+                <Col lg={6} md={6} sm={12}>
+                  <h5 className="text-justify serviceName">LaraVel 8 </h5>
+                  <p className="text-justify serviceDescription">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <Link className="courseViewMore float-left" to="/">
+                    View Details
+                  </Link>
+                </Col>
+
+                <Col lg={6} md={6} sm={12} className="p-2">
+                  <img
+                    alt="courseImg"
+                    className="courseImg"
+                    src="https://image.freepik.com/free-photo/coach-by-whiteboard_1098-12970.jpg"
                   />
                 </Col>
 
@@ -87,11 +106,26 @@ class Courses extends Component {
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </p>
-                  <Link
-                    className="courseViewMore float-left"
-                    to="/
-                  "
-                  >
+                  <Link className="courseViewMore float-left" to="/">
+                    View Details
+                  </Link>
+                </Col>
+
+                <Col lg={6} md={6} sm={12} className="p-2">
+                  <img
+                    alt="courseImg"
+                    className="courseImg"
+                    src="https://image.freepik.com/free-photo/coach-by-whiteboard_1098-12970.jpg"
+                  />
+                </Col>
+
+                <Col lg={6} md={6} sm={12}>
+                  <h5 className="text-justify serviceName">LaraVel 8 </h5>
+                  <p className="text-justify serviceDescription">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <Link className="courseViewMore float-left" to="/">
                     View Details
                   </Link>
                 </Col>
@@ -104,4 +138,4 @@ class Courses extends Component {
   }
 }
 
-export default Courses;
+export default AllCourses;

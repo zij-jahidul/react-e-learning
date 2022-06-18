@@ -21,7 +21,7 @@ class AboutMe extends Component {
           <Row>
             <Col lg={6} md={6} sm={12}>
               <div className="aboutMeImage">
-                <img className="aboutImg" src={face} />
+                <img className="aboutImg" src={face} alt="aboutImg" />
               </div>
             </Col>
 
