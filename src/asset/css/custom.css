@@ -171,6 +171,7 @@
 .iconBullets {
   color: #051b35;
   font-size: 16px;
+  margin-right: 10px;
 }
 .iconProject {
   color: #ffffff;
@@ -419,7 +420,7 @@ a.twitter {
   border-radius: 8px;
 }
 
-.maintitle {
+.mainTitle {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   color: #051b35;
@@ -483,16 +484,16 @@ a.twitter {
 
 /* /// Course Details  */
 
-.coruseDetailsText {
+.carouselDetailsText {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   color: #051b35;
   font-size: 35px;
 }
-.courseDetaisImg {
+.courseDetailsImg {
   width: 100%;
 }
-.CoruseallDescription {
+.carouselDescription {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   color: #051b35;

@@ -1,23 +1,23 @@
 import React, { Component, Fragment } from "react";
-import AllCourses from "../components/AllCourses/AllCourses";
 import Footer from "../components/Footer/Footer";
 import PageTop from "../components/PageTop/PageTop";
 import TopNavigation from "../components/TopNavigation/TopNavigation";
+import TermsDescription from "../components/TermsDescription/TermsDescription";
 
-class AllCoursesPage extends Component {
+class TermsPage extends Component {
   componentDidMount() {
     window.scroll(0, 0);
   }
   render() {
     return (
       <Fragment>
-        <TopNavigation title="All Courses" />
-        <PageTop pageTitle="All Courses" />
-        <AllCourses />
+        <TopNavigation title="Terms And Condition " />
+        <PageTop pageTitle="Terms And Condition" />
+        <TermsDescription />
         <Footer />
       </Fragment>
     );
   }
 }
 
-export default AllCoursesPage;
+export default TermsPage;

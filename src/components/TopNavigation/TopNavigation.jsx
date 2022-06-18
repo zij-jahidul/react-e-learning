@@ -7,7 +7,7 @@ import whiteLogo from "../../asset/image/logo_white.png";
 import blackLogo from "../../asset/image/logo_black.png";
 
 class TopNavigation extends Component {
-  constructor() {
+  constructor(props) {
     super();
     this.state = {
       navBarTitle: "navTitle",
@@ -15,6 +15,8 @@ class TopNavigation extends Component {
       navBarBack: "navBackground",
       navBarItem: "navItem",
       navVariant: "dark",
+
+      pageTitle: props.title,
     };
   }
 
@@ -45,6 +47,8 @@ class TopNavigation extends Component {
   render() {
     return (
       <Fragment>
+        <title>{this.state.pageTitle}</title>
+
         <Navbar
           className={this.state.navBarBack}
           collapseOnSelect
@@ -52,45 +56,82 @@ class TopNavigation extends Component {
           expand="lg"
           variant={this.state.navVariant}
         >
-          <Navbar.Brand className={this.state.navBarTitle} to="/">
-            <img src={this.state.navBarLogo} alt="logo" />
+          <Navbar.Brand className={this.state.navBarTitle}>
+            <Link
+              exact
+              activeStyle={{ color: "#ffd900" }}
+              className={this.state.navBarItem}
+              to="/"
+            >
+              <img src={this.state.navBarLogo} alt="logo" />
+            </Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto"></Nav>
             <Nav>
               <Nav.Link>
-                <Link className={this.state.navBarItem} to="/">
+                <Link
+                  exact
+                  activeStyle={{ color: "#ffd900" }}
+                  className={this.state.navBarItem}
+                  to="/"
+                >
                   HOME
                 </Link>
               </Nav.Link>
 
               <Nav.Link>
-                <Link className={this.state.navBarItem} to="/about">
+                <Link
+                  exact
+                  activeStyle={{ color: "#ffd900" }}
+                  className={this.state.navBarItem}
+                  to="/about"
+                >
                   ABOUT
                 </Link>
               </Nav.Link>
 
               <Nav.Link>
-                <Link className={this.state.navBarItem} to="/service">
+                <Link
+                  exact
+                  activeStyle={{ color: "#ffd900" }}
+                  className={this.state.navBarItem}
+                  to="/service"
+                >
                   SERVICE
                 </Link>
               </Nav.Link>
 
               <Nav.Link>
-                <Link className={this.state.navBarItem} to="/course">
+                <Link
+                  exact
+                  activeStyle={{ color: "#ffd900" }}
+                  className={this.state.navBarItem}
+                  to="/course"
+                >
                   COURSES
                 </Link>
               </Nav.Link>
 
               <Nav.Link>
-                <Link className={this.state.navBarItem} to="/portfolio">
+                <Link
+                  exact
+                  activeStyle={{ color: "#ffd900" }}
+                  className={this.state.navBarItem}
+                  to="/portfolio"
+                >
                   PORTFOLIO
                 </Link>
               </Nav.Link>
 
               <Nav.Link>
-                <Link className={this.state.navBarItem} to="/contact">
+                <Link
+                  exact
+                  activeStyle={{ color: "#ffd900" }}
+                  className={this.state.navBarItem}
+                  to="/contact"
+                >
                   CONTACT US
                 </Link>
               </Nav.Link>

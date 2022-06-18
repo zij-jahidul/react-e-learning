@@ -10,13 +10,18 @@ import Video from "../components/Video/Video";
 import ClientReview from "../components/ClientReview/ClientReview";
 import AboutMe from "../components/AboutMe/AboutMe";
 import Footer from "../components/Footer/Footer";
+import Welcome from "../components/Welcome/Welcome";
 
 class HomePage extends Component {
+  componentDidMount() {
+    window.scroll(0, 0);
+  }
   render() {
     return (
       <Fragment>
-        <TopNavigation />
+        <TopNavigation title="E-Learning" />
         <TopBanner />
+        <Welcome />
         <Services />
         <Analysis />
         <Summary />
